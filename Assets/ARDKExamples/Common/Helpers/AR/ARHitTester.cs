@@ -121,14 +121,14 @@ namespace Niantic.ARDKExamples.Helpers
       _placedObjects.Add(Instantiate(PlacementObjectPf, hitPosition, Quaternion.identity));
       
       var anchor = result.Anchor;
-      Debug.LogFormat
-      (
-        "Spawning cube at {0} (anchor: {1})",
-        hitPosition.ToString("F4"),
-        anchor == null
-          ? "none"
-          : anchor.AnchorType + " " + anchor.Identifier
-      );
+      //Debug.LogFormat
+      //(
+      //  "Spawning cube at {0} (anchor: {1})",
+      //  hitPosition.ToString("F4"),
+      //  anchor == null
+      //    ? "none"
+      //    : anchor.AnchorType + " " + anchor.Identifier
+      //);
     }
   }
 }
